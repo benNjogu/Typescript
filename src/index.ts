@@ -2,5 +2,6 @@
 
 let numbers: number[] = [];
 numbers[0] = 1;
-numbers[1] = "a";
-//The as causes an error
+
+numbers.forEach(n => n.toFixed)
+//with the . above, autocomplete is enabled.
