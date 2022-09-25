@@ -1,8 +1,8 @@
 let employee: {
   id: number;
-  name?: string; //Make name property optional or initialize it with an empty string.
+  name: string;
 } = {
   id: 1,
+  name: "Ben",
 };
 
-employee.name = "Ben";
