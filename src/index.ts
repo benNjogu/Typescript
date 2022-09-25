@@ -1,8 +1,8 @@
-const small = 1;
-const medium = 2;
-const large = 3;
+//const small = 1;
+//const medium = 2;
+//const large = 3;
 
-enum Size {
+const enum Size {
   Small = 1,
   Medium,
   Large,
