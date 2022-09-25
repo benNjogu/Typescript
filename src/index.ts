@@ -1,7 +1,7 @@
-function calculateTax(income: number, taxYear: number): number {
-  if (taxYear < 2022) return income * 1.2;
+function calculateTax(income: number, taxYear?: number): number {
+  if ((taxYear || 2022) < 2022) return income * 1.2;
 
   return income * 1.3;
 }
 
-calculateTax(50_000, 2020);
+calculateTax(50_000);
