@@ -1,20 +1,7 @@
-type Customer = {
-  birthday: Date;
+let speed: number | null = null;
+let ride = {
+  //Falsy (undefined, null, '', false, 0)
+  //The two below statements mean the same thing
+  //speed: speed !== null ? speed : 30,
+  speed: speed ?? 30, //Nullish coalescing operator
 };
-
-function getCustomer(id: number): Customer | null {
-  return id === 0 ? null : { birthday: new Date() };
-}
-
-let customer = getCustomer(0);
-//Optional property access operator
-console.log(customer?.birthday);
-
-//Optional element access operator
-/**
- * eg customer?.[0] this checks to make sure that the customer is not null or undefined.
- */
-
-//Optional call operator
-let log: any = null;
-log?.("a");
