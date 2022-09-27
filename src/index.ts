@@ -1,13 +1,17 @@
-function reject(message: string): never {
-  throw new Error(message);
-}
+class Account {
+  id: number;
+  owner: string;
+  balance: number;
 
-function processEvents(): never {
-  //to tell the compiler that this fn never returns
-  while (true) {
-    //Read a message from a queue
+  constructor(id: number, owner: string, balance: number) {
+    this.id = id;
+    this.owner = owner;
+    this.balance = balance;
+  }
+
+  deposit(amount: number): void {
+    if (amount <= 0) throw new Error("Invalid amount");
+
+    this.balance += amount;
   }
 }
-
-reject("...");
-console.log("Hello world");
