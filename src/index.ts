@@ -1,5 +1,5 @@
 class Account {
-  id: number;
+  readonly id: number;
   owner: string;
   balance: number;
 
@@ -19,3 +19,5 @@ class Account {
 let account = new Account(1, "Ben", 980);
 account.deposit(1000);
 console.log(account.balance);
+
+account.id = 3;
