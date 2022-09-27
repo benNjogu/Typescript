@@ -2,6 +2,7 @@ class Account {
   readonly id: number;
   owner: string;
   balance: number;
+  nickName?: string;
 
   constructor(id: number, owner: string, balance: number) {
     this.id = id;
@@ -20,4 +21,3 @@ let account = new Account(1, "Ben", 980);
 account.deposit(1000);
 console.log(account.balance);
 
-account.id = 3;
