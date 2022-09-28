@@ -5,7 +5,8 @@ class Person {
     return this.firstName + " " + this.lastName;
   }
 
-  walk() {
+  //with protected keyword, walk can be inherited.
+  protected walk() {
     console.log("walking");
   }
 }
@@ -16,6 +17,7 @@ class Student extends Person {
   }
 
   takeTest() {
+    this.walk();
     console.log("Taking a test");
   }
 }
