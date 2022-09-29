@@ -1,19 +1,5 @@
-interface Calendar {
-  name: string;
-  addEvent(): void;
-  removeEvent(): void;
+class KeyValuePair {
+  constructor(public key: number, public value: string) {}
 }
 
-interface CloudCalendar extends Calendar {
-  synch(): void;
-}
-
-class GoogleCalendar implements Calendar {
-  constructor(public name: string) {}
-  addEvent(): void {
-    throw new Error("Method not implemented.");
-  }
-  removeEvent(): void {
-    throw new Error("Method not implemented.");
-  }
-}
+let pair = new KeyValuePair("1", "Ben");
