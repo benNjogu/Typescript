@@ -1,4 +1,8 @@
-function echo<T extends { name: string }>(value: T): T {
+interface Person {
+  name: string;
+}
+
+function echo<T extends Person>(value: T): T {
   return value;
 }
 
