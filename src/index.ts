@@ -1,5 +1,5 @@
-class KeyValuePair {
-  constructor(public key: number, public value: string) {}
+class KeyValuePair<K, V> {
+  constructor(public key: K, public value: V) {}
 }
 
-let pair = new KeyValuePair("1", "Ben");
+let pair = new KeyValuePair(1, "Ben");
