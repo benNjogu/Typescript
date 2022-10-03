@@ -1,4 +1,3 @@
-import { Circle } from "./shapes";
+import * as Shapes from "./shapes";
 
-let circle = new Circle(84);
-console.log(circle);
+let circle = new Shapes.Circle(84);
